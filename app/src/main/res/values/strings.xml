@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Bakugan</string>
+    <string name="title_activity_edit">Edit</string>
+    <string name="id"></string>
+    <string name="title_activity_edit_human">EditHumanActivity</string>
+    <string name="title_activity_battle">BattleActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

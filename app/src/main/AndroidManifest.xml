@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.edu.unifei.ecot12.bakugan">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="br.edu.unifei.ecot12.app.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.edu.unifei.ecot12.app.EditHumanActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName="br.edu.unifei.ecot12.app.MainActivity">
+
+            <!-- O campo meta-data é necessário para suportar API's do 15 para baixo -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.edu.unifei.ecot12.app.MainActivity" />
+        </activity>
+        <activity
+            android:name="br.edu.unifei.ecot12.app.BattleActivity"
+            android:parentActivityName="br.edu.unifei.ecot12.app.MainActivity">
+
+            <!-- O campo meta-data é necessário para suportar API's do 15 para baixo -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.edu.unifei.ecot12.app.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
